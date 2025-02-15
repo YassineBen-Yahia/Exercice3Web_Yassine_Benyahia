@@ -34,8 +34,16 @@ AddButton.addEventListener('click',()=>{
 
 document.querySelector(".Tasks").addEventListener('click',function(e){
     let rowToRemove=e.target.closest('.deletable');
+
     rowToRemove.remove();
-    html= html.split(rowToRemove.innerHTML).join("");
+    html=document.querySelector(".Tasks").innerHTML;
+    html= html.replace(rowToRemove.innerHTML,"");
+    document.querySelector(".Tasks").innerHTML=html;
+
+    console.log(html);
+    
+    
+
 });
 
 
