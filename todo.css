@@ -1,0 +1,29 @@
+.container{
+    padding: 30px;
+}
+.input{
+    width: 90%;
+}
+.body{
+    background-color: rgb(217, 220, 232);
+}
+.addButton{
+    padding-top: 15px;
+}
+.AddToDo{
+    color: #ffffff;
+    background-color: blue;
+    border-radius: 5px;
+    border-color: blue;
+}
+.task{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+#remove{
+    visibility: hidden;
+}
