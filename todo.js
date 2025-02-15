@@ -40,7 +40,7 @@ document.querySelector(".Tasks").addEventListener('click',function(e){
     html= html.replace(rowToRemove.innerHTML,"");
     document.querySelector(".Tasks").innerHTML=html;
 
-    console.log(html);
+    //console.log(html);
     
     
 
