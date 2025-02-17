@@ -32,13 +32,21 @@ AddButton.addEventListener('click',()=>{
 });
 
 
-document.querySelector(".Tasks").addEventListener('click',function(e){
-    let rowToRemove=e.target.closest('.deletable');
 
-    rowToRemove.remove();
+document.querySelector(".Tasks").addEventListener('click',function(e){
+    if (e.target.classList.contains("bi")){
+        let rowToRemove=e.target.parentElement;
+        e.target.parentElement.remove();
+        html=document.querySelector(".Tasks").innerHTML;
+        html= html.replace(rowToRemove.innerHTML,"");
+        document.querySelector(".Tasks").innerHTML=html;
+
+    }
+
+    /*rowToRemove.remove();
     html=document.querySelector(".Tasks").innerHTML;
     html= html.replace(rowToRemove.innerHTML,"");
-    document.querySelector(".Tasks").innerHTML=html;
+    document.querySelector(".Tasks").innerHTML=html;*/
 
     //console.log(html);
     
